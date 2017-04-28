@@ -1,0 +1,72 @@
+[
+  {
+    "outputFile": "Content/sass/style.css",
+    "inputFile": "Content/sass/style.scss",
+    "sourceMap": false
+  },
+  {
+    "outputFile": "Content/sass/font-awesome.css",
+    "inputFile": "Content/sass/font-awesome.scss",
+    "sourceMap": false
+  },
+  {
+    "outputFile": "Content/sass/_animated.css",
+    "inputFile": "Content/sass/_animated.scss",
+    "sourceMap": false
+  },
+  {
+    "outputFile": "Content/sass/_stacked.css",
+    "inputFile": "Content/sass/_stacked.scss",
+    "sourceMap": false
+  },
+  {
+    "outputFile": "Content/sass/_screen-reader.css",
+    "inputFile": "Content/sass/_screen-reader.scss",
+    "sourceMap": false
+  },
+  {
+    "outputFile": "Content/sass/_bordered-pulled.css",
+    "inputFile": "Content/sass/_bordered-pulled.scss",
+    "sourceMap": false
+  },
+  {
+    "outputFile": "Content/sass/_rotated-flipped.css",
+    "inputFile": "Content/sass/_rotated-flipped.scss",
+    "sourceMap": false
+  },
+  {
+    "outputFile": "Content/sass/_core.css",
+    "inputFile": "Content/sass/_core.scss",
+    "sourceMap": false
+  },
+  {
+    "outputFile": "Content/sass/_fixed-width.css",
+    "inputFile": "Content/sass/_fixed-width.scss",
+    "sourceMap": false
+  },
+  {
+    "outputFile": "Content/sass/_icons.css",
+    "inputFile": "Content/sass/_icons.scss",
+    "sourceMap": false
+  },
+  {
+    "outputFile": "Content/sass/_larger.css",
+    "inputFile": "Content/sass/_larger.scss",
+    "sourceMap": false
+  },
+  {
+    "outputFile": "Content/sass/_list.css",
+    "inputFile": "Content/sass/_list.scss",
+    "sourceMap": false
+  },
+  {
+    "outputFile": "Content/sass/_mixins.css",
+    "inputFile": "Content/sass/_mixins.scss",
+    "sourceMap": false
+  },
+  {
+    "outputFile": "Content/sass/_path.css",
+    "inputFile": "Content/sass/_path.scss",
+    "sourceMap": false
+  }
+]

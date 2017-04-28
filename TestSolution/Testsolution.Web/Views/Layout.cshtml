@@ -1,0 +1,28 @@
+﻿@using System.Web.Optimization
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width"/>
+    <title>Test Solution</title>
+    <script src="~/scripts/jquery-1.8.2.js"></script>
+    <script src="~/scripts/angular/angular.js"></script>
+    <script src="~/scripts/angular/ngDialog.js"></script>
+    <script src="~/scripts/angular/angular-app.js"></script>
+    <script src="~/scripts/angular/filters/paginate.js"></script>
+    <script src="~/scripts/angular/filters/tableSort.js"></script>
+    <script src="~/scripts/angular/directives/pager.js"></script>
+    <script src="~/scripts/angular/directives/th-sort.js"></script>
+    <script src="~/scripts/angular/services/tableSorter.js"></script>
+    <script src="~/scripts/angular/services/paginator.js"></script>
+    @RenderSection("scripts", false)
+    <link href="~/Content/sass/style.css" rel="stylesheet">
+    <link href="~/Content/sass/font-awesome.css" rel="stylesheet">
+
+</head>
+<body>
+    <div id="content">
+    @RenderBody()
+    </div>
+</body>
+</html>

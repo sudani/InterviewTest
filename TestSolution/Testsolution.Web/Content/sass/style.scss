@@ -1,0 +1,197 @@
+﻿
+$base-col-width: 10px;
+$large-background: #EEEDF4;
+$light-border: #c1c1c1;
+$light-text: #aaaaaa;
+$highlight-text-background: #e2e1e1;
+$disabled-background: #e2e1e1;
+
+$work-item-background: #6ba5c2;
+$work-item-border: #3a87ad;
+
+$holiday-background: #3b0000;
+$holiday-border: #1c0000;
+
+$sickness-background: #924c00;
+$sickness-border: #723b00;
+
+$lunch-background: #301e46;
+$lunch-border: #1a1025;
+
+$meeting-background: #0e296d;
+$meeting-border: #0a1c4a;
+
+$team-meeting-background: #00374c;
+$team-meeting-border: #002330;
+
+$off-shift-background: #777;
+$off-shift-border: #555;
+
+$red: #cd0a0a;
+$green: #0ACD3B;
+
+$table-row-highlight: #6ba5c2;
+$dark-blue: #002090;
+$dark-grey: #333;
+$grey: #555;
+
+
+.homecontroller{
+margin-left:auto;
+margin-right:auto;
+    width:800px;
+}
+table.display-table {
+    width: 100%;
+
+    &.display-table-fixed {
+        table-layout: fixed;
+
+        .col-x-small {
+            width: $base-col-width;
+        }
+
+        .col-small {
+            width: $base-col-width * 2.5;
+        }
+
+        .col-medium {
+            width: $base-col-width * 5;
+        }
+
+        .col-large {
+            width: $base-col-width * 10;
+        }
+    }
+
+    &.display-table-bordered {
+        th, td {
+            border: 1px solid $dark-grey;
+        }
+    }
+
+    thead th {
+        font-weight: bold;
+        background-color: $grey;
+        color: #fff;
+        text-align: left;
+
+        a {
+            color: #fff;
+
+            &:hover {
+                color: #aaa;
+            }
+        }
+    }
+
+    tbody tr {
+        background-color: lighten($grey, 60%);
+
+        &:nth-child(even) {
+            background-color: lighten($grey, 65%);
+        }
+
+        &:hover {
+            background-color: lighten($grey, 50%);
+            cursor: pointer;
+        }
+
+        &.bold-row {
+            font-weight: bold;
+        }
+    }
+
+    td, th {
+        padding: 5px;
+        border-bottom: 1px solid $dark-grey;
+        color: $dark-grey;
+    }
+
+    .action-button {
+        background-color: #bcf2fb;
+        color: #002090;
+        padding: 2px 5px;
+        border-radius: 5px;
+        border: 1px solid #002090;
+
+        &:hover {
+            background-color: lighten(#bcf2fb, 5%);
+        }
+
+        &:active {
+            background-color: darken(#bcf2fb, 5%);
+        }
+
+        &.action-button-cancel {
+            color: #fff;
+            background-color: $red;
+            border-color: #540101;
+
+            &:hover {
+                background-color: lighten($red, 5%);
+            }
+
+            &:active {
+                background-color: darken($red, 5%);
+            }
+        }
+    }
+}
+
+
+.pager {
+    width: 100%;
+    position: relative;
+    margin: 5px 0;
+
+    &.left {
+        text-align: left;
+    }
+
+    &.right {
+        text-align: right;
+    }
+
+    &.centre, &.center {
+        text-align: center;
+    }
+
+    .pager-button-wrapper {
+        font-size: 0;
+    }
+
+    .pager-button {
+        color: $dark-grey;
+        border: 1px solid $dark-grey;
+        background-color: lighten($grey, 65%);
+        padding: 10px;
+        display: inline-block;
+        margin-left: -1px;
+        font-size: 0; // removes the gaps between inline elements
+
+        &.previous {
+            border-radius: 5px 0 0 5px;
+        }
+
+        &.next {
+            border-radius: 0 5px 5px 0;
+        }
+
+        &.pager-button-active {
+            background-color: $grey;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        &:active:not(.pager-button-ellipsis) {
+            background-color: lighten($grey, 60%);
+        }
+
+        span, i.fa {
+            font-size: 12px; // restore the font size for the numbers
+        }
+
+        
+    }
+}

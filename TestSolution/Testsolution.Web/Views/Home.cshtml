@@ -1,0 +1,29 @@
+﻿@{
+    Layout = "~/Views/Layout.cshtml";
+}
+
+@section Scripts{
+    <script src="~/scripts/Controllers/HomeController.js"></script>
+}
+<div ng-app="fte" ng-controller="HomeController" class="homecontroller">
+    <table class="display-table">
+        <thead>
+        <tr>
+            <th th-sort="FirstName" th-sort-name="persontable">First Name</th>
+            <th th-sort="LastName" th-sort-name="persontable">Last Name</th>
+            <th th-sort="Company" th-sort-name="persontable">Company</th>
+            <th th-sort="Country" th-sort-name="persontable">Country</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="person in people | paginate : 'persontable' : 20 | tableSort : 'persontable' : 'Id'">
+            <td ng-bind="person.FirstName"></td>
+            <td ng-bind="person.LastName"></td>
+            <td ng-bind="person.Company"></td>
+            <td ng-bind="person.Country"></td>
+        </tr>
+        </tbody>
+    </table>
+    <fte-pager pager-name="persontable" pager-alignment="centre"></fte-pager>
+
+</div>
