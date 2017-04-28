@@ -6,7 +6,7 @@
 
 
         scope.$evalAsync(function() {
-            http.get('/Testsolution.Web/People/GetAll')
+            http.get('/People/GetAll')
                 .success(function(response) {
                     scope.people = response;
                 })
