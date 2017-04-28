@@ -1,7 +1,6 @@
 ﻿
 namespace Testsolution.Web.Infrastructure.Windsor
 {
-    using System.Web.Mvc;
     using Castle.Windsor;
     using Castle.Windsor.Installer;
 

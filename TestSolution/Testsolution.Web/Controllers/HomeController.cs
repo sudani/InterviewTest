@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Testsolution.Web.Controllers
+﻿namespace Testsolution.Web.Controllers
 {
     using System.Web.Mvc;
 

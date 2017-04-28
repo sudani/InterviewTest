@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Testsolution.Web.Controllers
 {
     using System.Web.Http;
     using Data.Entities;
     using Logic.Managers;
-    using Newtonsoft.Json;
 
     [RoutePrefix("People")]
     public class PeopleController : ApiController

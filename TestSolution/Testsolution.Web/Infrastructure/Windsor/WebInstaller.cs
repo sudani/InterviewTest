@@ -5,7 +5,6 @@
     using Castle.MicroKernel.Registration;
     using Castle.MicroKernel.SubSystems.Configuration;
     using Castle.Windsor;
-    using Logic.Managers;
 
     public class WebInstaller : IWindsorInstaller
     {
