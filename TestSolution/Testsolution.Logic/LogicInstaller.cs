@@ -1,4 +1,4 @@
-﻿namespace Testsolution.Web.Infrastructure.Windsor
+﻿namespace Testsolution.Logic
 {
     using Castle.MicroKernel.Registration;
     using Castle.MicroKernel.SubSystems.Configuration;
@@ -8,7 +8,7 @@
     {
         public void Install(IWindsorContainer container, IConfigurationStore store)
         {
-            container.Register(Classes.FromAssembly(typeof(Logic.AssemblyHook).Assembly)
+            container.Register(Classes.FromThisAssembly()
                 .Where(type => type.Name.EndsWith("Manager"))
                 .WithServiceDefaultInterfaces()
                 .LifestylePerWebRequest());

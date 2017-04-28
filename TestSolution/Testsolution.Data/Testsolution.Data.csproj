@@ -70,7 +70,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AssemblyHook.cs" />
+    <Compile Include="DataInstaller.cs" />
     <Compile Include="Entities\Person.cs" />
     <Compile Include="Interfaces\IPersonRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

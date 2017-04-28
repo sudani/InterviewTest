@@ -1,5 +1,5 @@
 ﻿
-namespace Testsolution.Web.Infrastructure.Windsor
+namespace Testsolution.Data
 {
     using Castle.MicroKernel.Registration;
     using Castle.MicroKernel.SubSystems.Configuration;
@@ -9,9 +9,7 @@ namespace Testsolution.Web.Infrastructure.Windsor
     {
         public void Install(IWindsorContainer container, IConfigurationStore store)
         {
-            var classes = Classes.FromAssembly(typeof(Testsolution.Data.AssemblyHook).Assembly);
-
-            container.Register(classes
+            container.Register(Classes.FromThisAssembly()
                 .Where(type => type.Name.EndsWith("Repository"))
                 .LifestylePerWebRequest()
                 .WithServiceDefaultInterfaces());

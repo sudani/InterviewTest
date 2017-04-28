@@ -204,8 +204,6 @@
     <Compile Include="Infrastructure\Windsor\CastleWindsorDependencyResolver.cs" />
     <Compile Include="Infrastructure\Windsor\CastleWindsorDependencyScope.cs" />
     <Compile Include="Infrastructure\Windsor\IocContainer.cs" />
-    <Compile Include="Infrastructure\Windsor\DataInstaller.cs" />
-    <Compile Include="Infrastructure\Windsor\LogicInstaller.cs" />
     <Compile Include="Infrastructure\Windsor\WebInstaller.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
