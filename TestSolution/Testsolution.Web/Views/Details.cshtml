@@ -1,0 +1,58 @@
+@model Testsolution.Data.Entities.Person
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>PersonRepository</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <dl class="dl-horizontal">
+                    <dt>
+                        FirstName :
+                    </dt>
+                    <dd>
+                        @Html.TextBoxFor(model => model.FirstName)
+                    </dd>
+                     <dt>
+                        Last Name : 
+                    </dt>
+                    <dd>
+                        @Html.TextBoxFor(model => model.LastName)
+                    </dd>
+                     <dt>
+                        Company :
+                    </dt>
+                    <dd>
+                        @Html.TextBoxFor(model => model.Company)
+                    </dd>
+                     <dt>
+                        Country :
+                    </dt>
+                    <dd>
+                        @Html.TextBoxFor(model => model.Country)
+                    </dd>
+                    </dl>
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
