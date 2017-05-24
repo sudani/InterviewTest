@@ -1,0 +1,48 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.Mvc;
+using Testsolution.Data.Interfaces;
+using Testsolution.Data.Repositories;
+
+namespace Testsolution.Web.Controllers
+{
+    public class PersonMvcController : Controller
+    {
+        
+       /// <summary>
+       /// this will create an instance of people repositry
+       /// allowing accessing the method within the class.
+       /// </summary>
+        PersonRepository prs = new PersonRepository();
+
+       /// <summary>
+       /// a property ininitalized to peron repositry
+       /// </summary>
+        public PersonRepository PersonManager
+        {
+            get { return this.prs; }
+            set { prs = value; }
+        }
+        //
+        // GET: /PersonMvc/
+        public ActionResult Index()
+        {
+            return View();
+        }
+
+        /// <summary>
+        /// this will enable user to click 
+        /// on a button to view the selected Person
+        /// </summary>
+        /// <param name="id">id of current selected person on row</param>
+        /// <returns>will retrun some of the selected 
+        /// person details i.e. surname </returns>
+        public ActionResult Details(int id)
+        {
+           var pd = prs.Get(id);
+            return View(pd);
+        }
+	}
+}
